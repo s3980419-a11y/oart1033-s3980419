@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8" />
+    <title>Product - Phi Hai Dang (S3980419)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <div class="blob-outer-container">
+                <div class="blob-inner-container">
+                    <div class="blob"></div>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Main page</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <div class="switch_theme_container">
+                        <button id="ToggleButton">Switch Theme</button>
+                        <script src="thememode.js"></script>
+                </ul>
+            </nav>
+            <h2>Product</h2>
+                <div class="grid-container">
+                    <div class="card_3">
+                        <h4>5 products I made from last courses:</h4>
+                        <ol>
+                            <li>‣ A2 - Digital Infographics (DMS2: Collaboration)</li>
+                            <li>‣ A3 - Vector Digital Assets (DMS2: Collaboration)</li>
+                            <li>‣ A3 - Resonant Storytelling (Sound Design)</li>
+                            <li>‣ A3 - Interactive VR Essay (Media Cultures 1)</li>
+                            <li>‣ A1 - Abstract Music Video (Digital Video)</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="videogallery-wrap">
+                    <img src="nut_quay_ve.png" id="Nut_ve">
+                    <div class="videogallery">
+                    <div>
+                        <span><video src="phi_hai_dang_s3980419_a1.mp4" width="800" height="800" loop autoplay muted>A1 - Abstract Music Video (Digital Video)</video></span>
+                        <span><video src="comm2599-24t3-aky-A3-final-video.mp4" width="800" height="800" loop autoplay muted>A3 - Resonant Storytelling (Sound Design)</video></span>
+                        <span><video src="A2_Group_04_Showreel.mp4" width="800" height="800" loop autoplay muted>A2 - Digital Infographics (DMS2: Collaboration)</video></span>&nbsp;
+                    </div>
+                    <div>
+                        <span><video src="A3_Group_04_Showreel_FinalProduct.mp4" width="800" height="800" loop autoplay muted>A3 - Vector Digital Assets (DMS2: Collaboration)</video></span>
+                        <span><video src="PhiHaiDang_S3980419_A3_InteractiveVideoEssay.mp4" width="800" height="800" loop autoplay muted>A3 - Interactive VR Essay (Media Cultures 1)</video></span>
+                    </div>
+                </div>
+                    <img src="nut_di_tiep.png" id="Nut_tiep">
+                </div>
+        <script>
+            let scrollContainer = document.querySelector(".videogallery");
+            let Nut_ve = document.getElementById ("Nut_ve");
+            let Nut_tiep = document.getElementById ("Nut_tiep");
+
+            scrollContainer.addEventListener("wheel", (evt) => {
+                evt.preventDefault();
+                scrollContainer.scrollLeft += evt.deltaY;
+            });
+
+            Nut_tiep.addEventListener("click", ()=>{
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft += 1200;
+            })
+
+            Nut_ve.addEventListener("click", ()=>{
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft -= 1200;
+            })
+        </script>
+            <!--
+            <h5>A1 - Abstract Music Video (Digital Video)</h5>
+            <video src="phi_hai_dang_s3980419_a1.mov" width="800" height="800" loop autoplay muted>A1 - Abstract Music Video (Digital Video)</video>
+            <h5>A3 - Resonant Storytelling (Sound Design)</h5>
+            <video src="comm2599-24t3-aky-A3-final-video.mp4" width="800" height="800" loop autoplay muted>A3 - Resonant Storytelling (Sound Design)</video>
+            <h5>A2 - Digital Infographics (DMS2: Collaboration)</h5>
+            <video src="A2_Group_04_Showreel.mp4" width="800" height="800" loop autoplay muted>A2 - Digital Infographics (DMS2: Collaboration)</video>
+            <h5>A3 - Vector Digital Assets (DMS2: Collaboration)</h5>
+            <video src="A3_Group_04_Showreel_FinalProduct.mp4" width="800" height="800" loop autoplay muted>A3 - Vector Digital Assets (DMS2: Collaboration)</video>
+            <h5>A3 - Interactive VR Essay (Media Cultures 1)</h5>
+            <video src="PhiHaiDang_S3980419_A3_InteractiveVideoEssay.mp4" width="800" height="800" loop autoplay muted>A3 - Interactive VR Essay (Media Cultures 1)</video>
+            -->
+        </header>
+    </body>
+</html>
